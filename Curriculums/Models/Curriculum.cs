@@ -9,9 +9,6 @@ namespace Curriculums.Models
         [JsonPropertyName("img")]
         public string? Image { get; set; }
 
-        public override string ToString()
-        {
-            JsonSerializer.Serialize<Curriculum>(this);
-        }
+        public override string ToString() => JsonSerializer.Serialize<Curriculum>(this);
     }
 }

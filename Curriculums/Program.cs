@@ -1,7 +1,10 @@
+using Curriculums.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddTransient<CurriculumService>();
 
 var app = builder.Build();
 

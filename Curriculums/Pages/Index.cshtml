@@ -8,3 +8,13 @@
     <h1 class="display-4">Waaae</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+@foreach (var curriculum in Model.Curriculums) {
+    <div class="card">
+        <div class="card-img" style="background-image: url(@curriculum.Image);">
+            <div class="card-body">
+                <h5 class="card-title">@curriculum.Tittle</h5>
+            </div>
+        </div>
+    </div>
+}
