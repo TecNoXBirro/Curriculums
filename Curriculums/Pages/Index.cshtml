@@ -9,7 +9,8 @@
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
 
-@foreach (var curriculum in Model.Curriculums) {
+<div class="card-container">
+    @foreach (var curriculum in Model.Curriculums) {
     <div class="card">
         <div class="card-img" style="background-image: url(@curriculum.Image);">
             <div class="card-body">
@@ -17,4 +18,5 @@
             </div>
         </div>
     </div>
-}
+    }
+</div>
