@@ -8,6 +8,8 @@
 
 /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
+
+
 .card-container .card:hover .card-img {
     opacity: 1;
     -webkit-transform-style: preserve-3d;
@@ -18,7 +20,8 @@ for details on configuring this project to bundle and minify static web assets. 
 }
 .card-container .card {
     flex: 0 0 content;
-    margin: 10px
+    margin: 10px;
+    cursor: pointer;
 }
 .card-container .card-body {
     height: 10px;
